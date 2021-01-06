@@ -15,10 +15,12 @@ Passed OSCP in January 2021. These are the notes I took along my journey to achi
 Enumeration
 ===============================================================================================
 `Basics`
+-   Set the Target IP Address to the `$ip` system variable  
+    `export ip=192.168.1.100`
+-   Standard Port Scan
+      `sudo nmap -T4 -p- -A --osscan-guess --version-all -o in.scan -Pn`
 
-- sudo nmap -T4 -p- -A --osscan-guess --version-all -o in.scan -Pn
-
-- sudo nmap --top-ports 100 -sU -o udp.scan -Pn
+-   sudo nmap --top-ports 100 -sU -o udp.scan -Pn
 
 - Extensions: txt,php,aspx,cgi,asp,html,jsp,pdf,doc,docx,xls,xlsx,rtf,bak,xml,xsl,phpthml,sh,pl,py
 
