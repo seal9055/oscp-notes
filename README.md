@@ -325,4 +325,4 @@ Web Exploitation
      
 -    [SSTI - Server Side Template Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
 
--    ![Screenshot](Screenshots/ssti.png)
+-    ![Screenshot](Docs/SSTI.png)
