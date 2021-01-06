@@ -92,11 +92,20 @@ Enumeration
 -    [Pentest Monkey Link](http://pentestmonkey.net/tools/user-enumeration/finger-user-enum)<br><br>
 
 
+`TCP 110: POP3`
 
+-    Nmap Enum Script  
+     `sudo nmap --script pop3-capabilities,pop3-ntlm-info -p110 <RHOST>`
 
-
-
-
-
+-    Bruteforce  
+     `sudo nmap --script pop3-brute -p110 <RHOST>`
+     `auxiliary/scanner/pop3/pop3_login`
+     
+-    Login  
+     
+         USER <username>
+         PASS <password>
+         list                    - List Emails
+         retr <email_num>     - Retrieve Email <br><br>
 
 
