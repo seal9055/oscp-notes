@@ -599,6 +599,13 @@ Pivoting & Port Forwarding
 
 <br>
 
+-    [Chisel](https://github.com/jpillora/chisel/releases (download windows & linux version))
+
+         On Host: sudo ./chisel.sh server --reverse --port <LPORT>
+         On Target: chisel client <LHOST>:<LPORT> R:127.0.0.1:<PORT_TO_FWD>
+         
+<br>
+
 Other
 ===============================================================================================
 
