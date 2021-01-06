@@ -26,7 +26,6 @@ Enumeration
 -   Extensions  
     `txt,php,aspx,cgi,asp,html,jsp,pdf,doc,docx,xls,xlsx,rtf,bak,xml,xsl,phpthml,sh,pl,py`
 
--   Wordlists  
          ```bash
          /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
          /usr/share/seclists/Discovery/Web-Content/common.txt
@@ -36,13 +35,3 @@ Enumeration
          /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
          /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt
          ```
-            ```bash
-            iptables -P INPUT ACCEPT
-            iptables -P FORWARD ACCEPT
-            iptables -P OUTPUT ACCEPT
-            iptables -t nat -F
-            iptables -t mangle -F
-            iptables -F
-            iptables -X
-            iptables -t raw -F iptables -t raw -X
-            ```
