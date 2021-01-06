@@ -208,4 +208,20 @@ Enumeration
      `showmount -a(d)(e) <RHOST>`<br><br>
    
 `TCP 3306: MYSQL`
-
+     
+-    Login  
+     `mysql -u <user> -p`
+    
+-    Extensive Nmap  
+     `nmap -sV -p 3306 --script mysql-audit,mysql-databases,mysql-dump-hashes,mysql-empty-password,mysql-enum,mysql-info,mysql-query,mysql-users,mysql-variables,mysql-vuln-cve2012-2122 <RHOST>`
+     
+-    MSF Scripts  
+     
+         use auxiliary/scanner/mysql/mysql_version
+         use auxiliary/scanner/mysql/mysql_authbypass_hashdump
+         auxiliary/scanner/mysql/mysql_hashdump
+         mysql_enum
+         mysql_schemadump
+         mysql_start_up
+         
+<br>
