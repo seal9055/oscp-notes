@@ -158,7 +158,53 @@ Enumeration
      `smbclient //<RHOST>/<Share> -U <user>`
      
 -    Dump Info  
-     'python3 /usr/share/doc/python3-impacket/examples/samrdump.py <RHOST>'
+     `python3 /usr/share/doc/python3-impacket/examples/samrdump.py <RHOST>`
 
 -    Dump Info  
-     `rpcclient -U "" <RHOST>`
+     `rpcclient -U "" <RHOST>`<br>
+     
+`TCP 143:`
+
+-    Login  
+     `A001 login <user> <password>`
+     
+-    Use Evolution Mail Client to Log In  
+
+`TCP 443`
+
+-    Manually Check Certificate  
+
+-    Add DNS Names to /etc/hosts  
+
+-    SSL Enum    
+     `nmap -sV --script ssl-enum-ciphers <RHOST>`
+     
+-    Nikto  
+     `nikto -h <RHOST> -p 443 -output nikto_443`
+
+-    SSLScan  
+     `sslscan <ip>`<br>
+     
+`TCP 1433: MSSQL`
+
+-    Nmap Scan  
+     `nmap -p 1433 --script ms-sql-info,ms-sql-empty-password,ms-sql-xp-cmdshell,ms-sql-config,ms-sql-ntlm-info,ms-sql-tables,ms-sql-hasdbaccess,ms-sql-dac,ms-sql-dump-hashes --script-args mssql.instance-port=1433,mssql.username=sa,mssql.password=,mssql.instance-name=MSSQLSERVER <RHOST>`
+     
+-    Log In  
+     `sqsh -S <RHOST> -U <user>`
+ 
+-    Another Login  
+     `use auxiliary/scanner/mssql/mssql_login`<br>
+     
+`TCP 1521: ORACLE`
+     
+-    [Good Blog Post](https://medium.com/@netscylla/pentesters-guide-to-oracle-hacking-1dcf7068d573)
+<br>
+
+`TCP 2049: NFS`   
+
+-    Show Mountable Files
+     `showmount -a(d)(e) <RHOST>`<br>
+   
+`TCP 3306: MYSQL`
+
