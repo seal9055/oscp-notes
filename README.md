@@ -36,6 +36,7 @@ Enumeration
          /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
          /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt
          
+         
 `TCP 21: FTP`
  
  -   Download Everything  
@@ -47,10 +48,12 @@ Enumeration
 -    Ssl Ftp Connection  
      `openssl s_client -connect <RHOST>:21 -starttls ftp`
      
+     
 `TCP 22: SSH`
 
 -    Bruteforce  
      `hydra -l root -P /usr/share/wordlists/password/10k <RHOST> -t 4 ssh`
+     
      
 `TCP 25: SMTP`
 
@@ -74,6 +77,7 @@ Enumeration
      
 -    Send Mail To  
      `RCPT TO:<user>`
+     
 
 `TCP 53: DNS`
 
