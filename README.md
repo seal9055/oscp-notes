@@ -161,14 +161,15 @@ Enumeration
      `python3 /usr/share/doc/python3-impacket/examples/samrdump.py <RHOST>`
 
 -    Dump Info  
-     `rpcclient -U "" <RHOST>`<br>
+     `rpcclient -U "" <RHOST>`<br><br>
      
 `TCP 143:`
 
 -    Login  
      `A001 login <user> <password>`
      
--    Use Evolution Mail Client to Log In  
+-    Use Evolution Mail Client to Log In 
+<br>
 
 `TCP 443`
 
