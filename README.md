@@ -85,22 +85,24 @@ Enumeration
          <RHOST>  
       
 -    Zone Transfer  
-     `dig axfr @<RHOST> <dnsname>`<br><br>
+     `dig axfr @<RHOST> <dnsname>`
+     
+<br>
      
 `TCP 79: Finger Enumeration`
 
--    [Pentest Monkey Link](http://pentestmonkey.net/tools/user-enumeration/finger-user-enum)<br><br>
+-    [Pentest Monkey Link](http://pentestmonkey.net/tools/user-enumeration/finger-user-enum)
+
+<br>
 
 `tcp 88: Kerberos`
 
--    Use [Kerbrute](https://github.com/ropnop/kerbrute) to Enumerate Users
+-    Use [Kerbrute](https://github.com/ropnop/kerbrute) to Enumerate Users and Passwords
      `kerbrute`
      
--    Asreproast  
-     `asreproast`
+-    [Rubeus](https://github.com/GhostPack/Rubeus)  
 
--    Bruteforce  
-     `brute`<br><br>
+<br> 
 
 `TCP 110: POP3`
 
@@ -179,6 +181,16 @@ Enumeration
      `A001 login <user> <password>`
      
 -    Use Evolution Mail Client to Log In 
+
+<br>
+
+`TCP 389: LDAP`
+
+-    ldapsearch  
+     `ldapsearch -h <rhost> -x`  
+     `ldapsearch -h <rhost> -x -s base namingcontexts`  
+     `ldapsearch -h <rhost> -x -b "<information from previous command>"`  
+     
 <br>
 
 `TCP 443`
