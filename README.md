@@ -378,3 +378,27 @@ Post Exploitation Linux
 [linpeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)  
 [pspy](https://github.com/DominicBreuker/pspy)  
 [suid3num](https://github.com/Anon-Exploiter/SUID3NUM)  
+
+<br>
+
+`Manual`
+
+`whoami/id/hostname`  
+
+`cat /etc/issue`  
+`cat /etc/*-release`  
+
+`history`  
+
+`w`  
+
+`ls -l /etc/passwd`  
+`ls -l /etc/shadow`  
+`ls -l /etc/group`  
+
+`sudo -l`  
+`(check for env_keep+=LD_PRELOAD)`  
+`(check for env_keep+=LD_LIBRARY_PATH)`  
+
+
+
