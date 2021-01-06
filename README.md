@@ -392,7 +392,7 @@ Post Exploitation Linux
 
 `w`  
 
-`ls -l /etc/passwd`  
+-    `ls -l /etc/passwd`  
 `ls -l /etc/shadow`  
 `ls -l /etc/group`  
 
