@@ -79,10 +79,10 @@ Enumeration
 
 -    Standard Enum  
 
-      nslookup  
-      server <RHOST>  
-      127.0.0.1  
-      <RHOST>  
+         nslookup  
+         server <RHOST>  
+         127.0.0.1  
+         <RHOST>  
       
--    Zone Transfer
+-    Zone Transfer  
      `dig axfr @<RHOST> <dnsname>`
