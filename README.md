@@ -381,24 +381,56 @@ Post Exploitation Linux
 
 <br>
 
+`Upgrade Shell`  
+-    `python -c 'import pty;pty.spawn("/bin/bash")'`  
+-    `cltr-z `  
+-    `stty raw -echo;fg  fg`  
+-    `export TERM=xterm`  
+-    `stty -a ; stty rows columns 136 rows 32`  
+-    `export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`  
+
+<br>
+
 `Manual`
 
-`whoami/id/hostname`  
+-    `whoami/id/hostname`  
 
-`cat /etc/issue`  
-`cat /etc/*-release`  
+-    `cat /etc/issue`  
+-    `cat /etc/*-release`  
 
-`history`  
+-    `history`  
 
-`w`  
+-    `w`  
 
 -    `ls -l /etc/passwd`  
-`ls -l /etc/shadow`  
-`ls -l /etc/group`  
+-    `ls -l /etc/shadow`  
+-    `ls -l /etc/group`  
 
-`sudo -l`  
-`(check for env_keep+=LD_PRELOAD)`  
-`(check for env_keep+=LD_LIBRARY_PATH)`  
+-    `sudo -l`  
+-    `(check for env_keep+=LD_PRELOAD)`  
+-    `(check for env_keep+=LD_LIBRARY_PATH)`  
 
+-    `find / -group <mygroup> -ls 2>/dev/null`  
+-    `find / -user <myuser> -ls 2>/dev/null`  
+
+-    `cat /etc/exports - (check for nsf)`
+
+-    `mount -l`  
+-    `cat /etc/fstab`  
+-    `/bin/lsblk`  
+
+-    `lpstat -a`  
+-    `lscpu`  
+
+<br>
+
+`Common Files`
+
+-    `grep -Rli password`  
+-    `/`  
+-    `/home`    
+-    `/opt`  
+-    `/tmp`  
+-    `/var`  
 
 
