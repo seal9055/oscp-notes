@@ -417,9 +417,10 @@ Post Exploitation Linux
 -    `ls -l /etc/shadow`  
 -    `ls -l /etc/group`  
 
--    `sudo -l`  
--    `(check for env_keep+=LD_PRELOAD)`  
--    `(check for env_keep+=LD_LIBRARY_PATH)`  
+         sudo -l    
+         (check for env_keep+=LD_PRELOAD)  
+         (check for env_keep+=LD_LIBRARY_PATH)  
+         (sudo Version under 1.9, 1.8.27 exploitable)  
 
 -    `find / -group <mygroup> -ls 2>/dev/null`  
 -    `find / -user <myuser> -ls 2>/dev/null`  
