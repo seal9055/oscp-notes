@@ -36,4 +36,13 @@ Enumeration
          /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
          /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt
          ```
-
+            ```bash
+            iptables -P INPUT ACCEPT
+            iptables -P FORWARD ACCEPT
+            iptables -P OUTPUT ACCEPT
+            iptables -t nat -F
+            iptables -t mangle -F
+            iptables -F
+            iptables -X
+            iptables -t raw -F iptables -t raw -X
+            ```
