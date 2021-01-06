@@ -15,7 +15,7 @@ Passed OSCP in January 2021. These are the notes I took along my journey to achi
 Enumeration
 ===============================================================================================
 `Basics`
-```
+
 - sudo nmap -T4 -p- -A --osscan-guess --version-all -o in.scan -Pn
 
 - sudo nmap --top-ports 100 -sU -o udp.scan -Pn
@@ -30,4 +30,4 @@ Enumeration
 - /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
 - /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
 - /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt
-```
+
