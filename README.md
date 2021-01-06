@@ -77,12 +77,12 @@ Enumeration
 
 `TCP 53: DNS`
 
--    Standard Enum
+-    Standard Enum  
 
-      nslookup
-      server <RHOST>
-      127.0.0.1
-      <RHOST>
-     
+      nslookup  
+      server <RHOST>  
+      127.0.0.1  
+      <RHOST>  
+      
 -    Zone Transfer
      `dig axfr @<RHOST> <dnsname>`
