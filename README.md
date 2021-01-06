@@ -109,4 +109,33 @@ Enumeration
          retr <email_num>     - Retrieve Email 
 <br><br>
 
+`TCP 111: RPCBIND`
+
+-    Enumeration  
+     `rpcinfo -p <RHOST>`  
+     `rpcinfo -s <RHOST>`  
+<br><br>
+
+`TCP 119: NNTP`
+
+-    Possible commands 
+     `HELP, LIST`
+<br><br>
+
+`TCP 135 MSRPC`
+
+-    Nmap Scan
+     `sudo nmap -n -sV -Pn -p 135 --script=msrpc-enum <RHOST>`
+     
+-    MSF Enum
+
+         use auxiliary/scanner/dcerpc/endpoint_mapper
+         use auxiliary/scanner/dcerpc/hidden
+         use auxiliary/scanner/dcerpc/management
+         use auxiliary/scanner/dcerpc/tcp_dcerpc_auditor  
+         
+-    RPC Dump
+     `/usr/bin/impacket-rpcdump <RHOST> -p 135`<br>
+     
+ `TCP 139/445: SMB/RPC`
 
