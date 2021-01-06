@@ -45,7 +45,7 @@ Enumeration
      `nmap --script ftp-anon,ftp-bounce,ftp-brute,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum,ftp-syst -p21 <RHOST>`
 
 -    Ssl Ftp Connection  
-     `openssl s_client -connect <RHOST>:21 -starttls ftp`
+     `openssl s_client -connect <RHOST>:21 -starttls ftp`<br><br>
 
 `TCP 22: SSH`
 
@@ -73,7 +73,7 @@ Enumeration
      `MAIL FROM:test@test.org`
      
 -    Send Mail To  
-     `RCPT TO:<user>`
+     `RCPT TO:<user>`<br><br>
 
 `TCP 53: DNS`
 
@@ -85,4 +85,18 @@ Enumeration
          <RHOST>  
       
 -    Zone Transfer  
-     `dig axfr @<RHOST> <dnsname>`
+     `dig axfr @<RHOST> <dnsname>`<br><br>
+     
+`TCP 79: Finger Enumeration`
+
+-    (Pentest Monkey Link)[http://pentestmonkey.net/tools/user-enumeration/finger-user-enum]
+
+
+
+
+
+
+
+
+
+
