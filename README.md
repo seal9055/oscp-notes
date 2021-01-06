@@ -97,8 +97,7 @@ Enumeration
 
 `tcp 88: Kerberos`
 
--    Use [Kerbrute](https://github.com/ropnop/kerbrute) to Enumerate Users and Passwords
-     `kerbrute`
+-    Use [Kerbrute](https://github.com/ropnop/kerbrute) to Enumerate Users and Passwords  
      
 -    [Rubeus](https://github.com/GhostPack/Rubeus)  
 
