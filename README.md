@@ -139,3 +139,26 @@ Enumeration
      
  `TCP 139/445: SMB/RPC`
 
+-    smbmap  
+     `smbmap -H <RHOST>`
+     
+-    enum4linux
+     `enum4linux -a -M -l -d <RHOST> 2>&1`
+   
+-    Version Scan  
+     `use auxiliary/scanner/smb/smb_version`
+     
+-    Extensive Nmap  
+     `sudo nmap -p139,445 -A --script smb2-capabilities smb2-security-mode smb2-time smb2-vuln-uptime smb-brute smb-double-pulsar-backdoor smb-enum-domains smb-enum-groups smb-enum-processes smb-enum-services smb-enum-sessions smb-enum-shares smb-enum-users smb-flood smb-ls smb-mbenum smb-os-discovery smb-print-text smb-protocols smb-psexec smb-security-mode smb-server-stats smb-system-info smb-vuln-conficker smb-vuln-cve2009-3103 smb-vuln-cve-2017-7494 smb-vuln-ms06-025 smb-vuln-ms07-029 smb-vuln-ms08-067 smb-vuln-ms10-054 smb-vuln-ms10-061 smb-vuln-ms17-010 smb-vuln-regsvc-dos smb-vuln-webexec smb-webexec-exploit <RHOST>`
+     
+-    Enumerate Share Permissions  
+     `crackmapexec smb <RHOST> --shares`
+  
+-    Log Into Shares  
+     `smbclient //<RHOST>/<Share> -U <user>`
+     
+-    Dump Info  
+     'python3 /usr/share/doc/python3-impacket/examples/samrdump.py <RHOST>'
+
+-    Dump Info  
+     `rpcclient -U "" <RHOST>`
