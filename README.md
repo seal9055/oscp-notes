@@ -105,7 +105,8 @@ Enumeration
      
          USER <username>
          PASS <password>
-         list                    - List Emails
-         retr <email_num>     - Retrieve Email <br><br>
+         list                 - List Emails
+         retr <email_num>     - Retrieve Email 
+<br><br>
 
 
