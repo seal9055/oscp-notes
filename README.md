@@ -433,4 +433,38 @@ Post Exploitation Linux
 -    `/tmp`  
 -    `/var`  
 
+<br>
 
+`Cron`
+
+-    `/etc/cronjobs`  
+
+<br>
+
+`Service Exploits`
+
+-    `ps aux | grep "^root"`  
+-    `netstat -antup`  
+
+-    `<service> -v`  
+-    `<service> --version`  
+
+-    Debian  
+     `dpkg -l | grep <service>`  
+     
+-    Rpm  
+     `rpm -qa | grep <service>`  
+     
+<br>
+
+`SUID & SGID`
+
+`find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null`  
+
+-    [gtfobins](https://gtfobins.github.io)
+
+-    Check For Writeable Shared Files
+
+         strace <service> 2>&1 | grep -iE "open|access|no such file"
+         create & compile [Shell](https://github.com/seal9055/Docs/blob/main/suid.c)
+         Execute Service
