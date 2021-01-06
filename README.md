@@ -34,5 +34,6 @@ Enumeration
          /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
          /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
          /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
-         /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt```
+         /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt
+         ```
 
