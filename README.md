@@ -315,7 +315,9 @@ Web Exploitation
      `auxiliary/scanner/http/apache_mod_cgi_bash_env`
      
 -    MSF Exploit  
-     `exploit/multi/http/apache_mod_cgi_bash_env_exec`<br>
+     `exploit/multi/http/apache_mod_cgi_bash_env_exec`
+     
+<br><br>
 
 `XSS`
 
@@ -330,6 +332,7 @@ Web Exploitation
 ![SSTI](https://github.com/seal9055/Docs/blob/main/SSTI.png?raw=true)
 
 <br>
+
 `CMS`
 
 -    WORDPRESS  
