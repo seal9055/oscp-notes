@@ -625,28 +625,29 @@ Other
          
 <br>
 
--    SSH Encrypted  
-     `/usr/share/john/ssh2john`  
+`SSH Encrypted`  
+-    `/usr/share/john/ssh2john`  
 
 <br>
 
--    Crack Zip Pw   
-     `fcrackzip -uvDp /usr/share/wordlists/rockyou.txt file.zip`  
+`Crack Zip Pw`  
+-    `fcrackzip -uvDp /usr/share/wordlists/rockyou.txt file.zip`  
 
 <br>
 
--    Tcp Dump  
-     `sudo tcpdump -i tun0 icmp`  
+`Tcp Dump`
+-    `sudo tcpdump -i tun0 icmp`  
 
 <br>
 
--    Images  
-     `binwalk <image>`  
-     `binwalk -Me <image>`  
+`Images`  
+-    `binwalk <image>`  
+-    `binwalk -Me <image>`  
      
 <br>
 
--    Recognize Encryption [Tio.run](https://tio.run/#)  
+`Recognize Encryption` 
+-    [Tio.run](https://tio.run/#)  
 
 <br>
 
