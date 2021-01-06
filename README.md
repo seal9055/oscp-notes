@@ -18,7 +18,7 @@ Enumeration
 -   Set the Target IP Address to the `$ip` system variable  
     `export ip=192.168.1.100`
     
--   Standard Port Scan
+-   Standard Port Scan  
      `sudo nmap -T4 -p- -A --osscan-guess --version-all -o in.scan -Pn`
 
 -   sudo nmap --top-ports 100 -sU -o udp.scan -Pn
