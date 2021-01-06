@@ -27,6 +27,7 @@ Enumeration
     `txt,php,aspx,cgi,asp,html,jsp,pdf,doc,docx,xls,xlsx,rtf,bak,xml,xsl,phpthml,sh,pl,py`
 
 -    Wordlists  
+
          /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
          /usr/share/seclists/Discovery/Web-Content/common.txt
          /usr/share/seclists/Discovery/Web-Content/big.txt
