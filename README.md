@@ -292,7 +292,7 @@ Web Exploitation
 -    Linux Path  
      `../../../../../../../../etc/passwd`
  
--    Windows Path  
+-    [Windows LFI](https://github.com/seal9055/Docs/blob/main/windows_lfi)   
      `c:\windows\system32\drivers\etc\hosts`
          
 -    RFI  
