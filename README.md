@@ -27,11 +27,11 @@ Enumeration
     `txt,php,aspx,cgi,asp,html,jsp,pdf,doc,docx,xls,xlsx,rtf,bak,xml,xsl,phpthml,sh,pl,py`
 
 -   Wordlists  
-        ```/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt  
-         /usr/share/seclists/Discovery/Web-Content/common.txt  
-         /usr/share/seclists/Discovery/Web-Content/big.txt  
-         /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt  
-         /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt  
-         /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt  
-         /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt  ```  
+         `/usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt<br/>
+         /usr/share/seclists/Discovery/Web-Content/common.txt<br/>
+         /usr/share/seclists/Discovery/Web-Content/big.txt<br/>  
+         /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt<br/>
+         /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt<br/> 
+         /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt<br/>
+         /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt<br/>`
 
