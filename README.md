@@ -50,8 +50,8 @@ Enumeration
 `TCP 22: SSH`
 
 -    Bruteforce  
-     `hydra -l root -P /usr/share/wordlists/password/10k <RHOST> -t 4 ssh`
-     <br>
+     `hydra -l root -P /usr/share/wordlists/password/10k <RHOST> -t 4 ssh`<br>
+     
 `TCP 25: SMTP`
 
 -    Nmap Enumeration  
