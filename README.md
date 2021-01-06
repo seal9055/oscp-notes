@@ -50,7 +50,7 @@ Enumeration
 `TCP 22: SSH`
 
 -    Bruteforce  
-     'hydra -l root -P /usr/share/wordlists/password/10k <RHOST> -t 4 ssh`
+     `hydra -l root -P /usr/share/wordlists/password/10k <RHOST> -t 4 ssh`
      
 `TCP 25: SMTP`
 
@@ -74,3 +74,15 @@ Enumeration
      
 -    Send Mail To  
      `RCPT TO:<user>`
+
+`TCP 53: DNS`
+
+-    Standard Enum
+
+      nslookup
+      server <RHOST>
+      127.0.0.1
+      <RHOST>
+     
+-    Zone Transfer
+     `dig axfr @<RHOST> <dnsname>`
