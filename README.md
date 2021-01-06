@@ -34,7 +34,7 @@ Enumeration
          /usr/share/seclists/Discovery/Web-Content/raft-medium-directories.txt
          /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
          /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
-         /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt<br><br>
+         /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt
          
 `TCP 21: FTP`
  
@@ -46,7 +46,7 @@ Enumeration
 
 -    Ssl Ftp Connection  
      `openssl s_client -connect <RHOST>:21 -starttls ftp`
-     <br>
+
 `TCP 22: SSH`
 
 -    Bruteforce  
@@ -74,7 +74,7 @@ Enumeration
      
 -    Send Mail To  
      `RCPT TO:<user>`
-    <br>
+
 `TCP 53: DNS`
 
 -    Standard Enum  
