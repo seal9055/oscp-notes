@@ -26,7 +26,7 @@ Enumeration
 -   Extensions  
     `txt,php,aspx,cgi,asp,html,jsp,pdf,doc,docx,xls,xlsx,rtf,bak,xml,xsl,phpthml,sh,pl,py`
 
-         ```
+         `
          /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
          /usr/share/seclists/Discovery/Web-Content/common.txt
          /usr/share/seclists/Discovery/Web-Content/big.txt
@@ -34,4 +34,4 @@ Enumeration
          /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
          /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
          /usr/share/seclists/Fuzzing/SQLi/Generic-SQLi.txt
-         ```
+         `
