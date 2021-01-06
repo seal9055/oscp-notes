@@ -183,7 +183,7 @@ Enumeration
      `nikto -h <RHOST> -p 443 -output nikto_443`
 
 -    SSLScan  
-     `sslscan <ip>`<br>
+     `sslscan <ip>`<br><br>
      
 `TCP 1433: MSSQL`
 
@@ -194,7 +194,7 @@ Enumeration
      `sqsh -S <RHOST> -U <user>`
  
 -    Another Login  
-     `use auxiliary/scanner/mssql/mssql_login`<br>
+     `use auxiliary/scanner/mssql/mssql_login`<br><br>
      
 `TCP 1521: ORACLE`
      
@@ -204,7 +204,7 @@ Enumeration
 `TCP 2049: NFS`   
 
 -    Show Mountable Files
-     `showmount -a(d)(e) <RHOST>`<br>
+     `showmount -a(d)(e) <RHOST>`<br><br>
    
 `TCP 3306: MYSQL`
 
