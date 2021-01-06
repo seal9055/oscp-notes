@@ -1,6 +1,6 @@
 # oscp-notes
 
-Passed OSCP in January 2021. These are the notes I took along my journey to achieving it. 
+I Passed the OSCP in January 2021. These are the notes I took along my journey to achieving it. 
 
 ## Table of Contents
 - [Enumeration](#Enumeration)
@@ -91,6 +91,16 @@ Enumeration
 
 -    [Pentest Monkey Link](http://pentestmonkey.net/tools/user-enumeration/finger-user-enum)<br><br>
 
+`tcp 88: Kerberos`
+
+-    Use [Kerbrute](https://github.com/ropnop/kerbrute) to Enumerate Users
+     `kerbrute`
+     
+-    Asreproast  
+     `asreproast`
+
+-    Bruteforce  
+     `brute`
 
 `TCP 110: POP3`
 
@@ -225,3 +235,16 @@ Enumeration
          mysql_start_up
          
 <br>
+
+`TCP 3389: RDP`
+
+-    Log In  
+     `rdesktop -u <user> -p <password> <RHOST>`
+     
+`UDP 161: SNMP`
+
+-    Enum  
+     `snmpwalk -c public -v2c <RHOST>`
+     `snmp-check <RHOST>`
+
+
