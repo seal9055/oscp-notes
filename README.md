@@ -328,3 +328,10 @@ Web Exploitation
 ![SSTI](https://github.com/seal9055/Docs/blob/main/SSTI.png?raw=true)
 
 
+`CMS`
+
+-    WORDPRESS  
+     `wpscan --url http://<RHOST> (--api-token <token>) -e u,ap,at --plugins-detection aggressive`
+     
+-    MAGENTO  
+     [Magescan](https://github.com/steverobbins/magescan)
