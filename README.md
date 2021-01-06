@@ -240,6 +240,7 @@ Enumeration
 
 -    Log In  
      `rdesktop -u <user> -p <password> <RHOST>`
+<br>
      
 `UDP 161: SNMP`
 
