@@ -350,7 +350,7 @@ Web Exploitation
 <br>
 Post Exploitation Linux
 ===============================================================================================
-
+<br>
 `File Upload`
 
 -    Starting Web Server  
@@ -366,11 +366,11 @@ Post Exploitation Linux
 
          on target:  ncat -nvlp <port> --ssl > <out-file>
          on kali:  ncat -nv <RHOST> <RPORT> --ssl < <file-to-send>
-     
+<br>
 `Enum Tools`
 
-[Linenum](https://github.com/rebootuser/LinEnum)
-[linux smart enumeration](https://github.com/diego-treitos/linux-smart-enumeration)
-[linpeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
-[pspy](https://github.com/DominicBreuker/pspy)
-[suid3num](https://github.com/Anon-Exploiter/SUID3NUM)
+[Linenum](https://github.com/rebootuser/LinEnum)  
+[linux smart enumeration](https://github.com/diego-treitos/linux-smart-enumeration)  
+[linpeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)  
+[pspy](https://github.com/DominicBreuker/pspy)  
+[suid3num](https://github.com/Anon-Exploiter/SUID3NUM)  
