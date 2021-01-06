@@ -609,6 +609,45 @@ Pivoting & Port Forwarding
 Other
 ===============================================================================================
 
+`Hashcracking`
+
+-    [Hashes.org](https://hashes.org)  
+
+-    [Hash Analyzer](https://www.tunnelsup.com/hash-analyzer/)  
+
+-    John  
+     `john --format=<fomrat> --wordlist=/usr/share/wordlists/rockyou.txt hash.txt`  
+
+-    Hashcat
+
+         hashcat -m <hashid> -a 0 -o cracked.txt hash.txt /usr/share/wordlists/rockyou.txt -O  
+         hashcat -m <hashid> -a 0 -o cracked.txt hash.txt /usr/share/wordlists/rockyou.txt -O -r /usr/share/hashcat/rules/best64.rule  
+         
+<br>
+
+-    SSH Encrypted  
+     `/usr/share/john/ssh2john`  
+
+<br>
+
+-    Crack Zip Pw   
+     `fcrackzip -uvDp /usr/share/wordlists/rockyou.txt file.zip`  
+
+<br>
+
+-    Tcp Dump  
+     `sudo tcpdump -i tun0 icmp`  
+
+<br>
+
+-    Images  
+     `binwalk <image>`  
+     `binwalk -Me <image>`  
+     
+<br>
+
+-    Recognize Encryption [Tio.run](https://tio.run/#)  
+
 <br>
 
 Buffer Overflow
