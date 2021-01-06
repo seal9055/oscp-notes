@@ -461,10 +461,49 @@ Post Exploitation Linux
 
 `find / -type f -a \( -perm -u+s -o -perm -g+s \) -exec ls -l {} \; 2> /dev/null`  
 
--    [gtfobins](https://gtfobins.github.io)
+-    [gtfobins](https://gtfobins.github.io)  
 
--    Check For Writeable Shared Files ([Shell](https://github.com/seal9055/Docs/blob/main/suid.c))
+-    Check For Writeable Shared Files ([Shell](https://github.com/seal9055/Docs/blob/main/suid.c))  
 
          strace <service> 2>&1 | grep -iE "open|access|no such file"
-         create & compile 
+         create & compile the above linked shell
          Execute Service
+         
+-    Incomplete Path  
+         
+          strings <service>  
+         strace -v -f -e execve <service> 2>&1    
+         If found, create a binary with a reverse shell in the /tmp directory and add it to path  
+         PATH=.:$PATH /service  
+     
+<br>
+
+`Kernel Exploits`
+
+-    `uname -a `  
+
+-    `searchsploit linux kernel <version> <distribution> priv esc`  
+
+-    `linux exploit suggester`  
+
+<br>
+
+`Network`
+
+-    `ip a/ipconfig/ifconfig`  
+-    `route`  
+-    `ss -anp/netstat -anp`  
+-    `dnsdomainname`  
+-    `ls /etc | grep iptables`  
+-    `cat /etc/networks` 
+-    `netstat -punta`  
+
+<br>
+
+Post Exploitation Windows
+===============================================================================================
+
+<br>
+
+
+
