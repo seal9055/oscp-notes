@@ -100,7 +100,7 @@ Enumeration
      `asreproast`
 
 -    Bruteforce  
-     `brute`<br>
+     `brute`<br><br>
 
 `TCP 110: POP3`
 
