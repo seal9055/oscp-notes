@@ -44,6 +44,33 @@ Enumeration
 -    Ftp Nmap Scan  
      `nmap --script ftp-anon,ftp-bounce,ftp-brute,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum,ftp-syst -p21 <RHOST>`
 
--    Ssl Ftp Connection
+-    Ssl Ftp Connection  
      `openssl s_client -connect <RHOST>:21 -starttls ftp`
-         
+     
+`TCP 22: SSH`
+
+-    Bruteforce  
+     'hydra -l root -P /usr/share/wordlists/password/10k <RHOST> -t 4 ssh`
+     
+`TCP 25: SMTP`
+
+-    Nmap Enumeration  
+     `sudo nmap --script "smtp-commands,smtp-open-relay,smtp-vuln*" -p25 <RHOST>`
+     
+-    User Enumeration  
+     `sudo nmap --script smtp-enum-users --script-args smtp-enum-users.methods={VRFY} -p25 <RHOST>`
+ 
+-    Version Scan  
+     `auxiliary/scanner/smtp/smtp_enum`
+
+-    Introduction  
+     `HELO <LHOST> || EHLO <LHOST>`
+   
+-    Enumerate Users  
+     `EXPN <user> || VRFY <user>`
+
+-    Send Mail From  
+     `MAIL FROM:test@test.org`
+     
+-    Send Mail To  
+     `RCPT TO:<user>`
