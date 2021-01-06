@@ -463,8 +463,8 @@ Post Exploitation Linux
 
 -    [gtfobins](https://gtfobins.github.io)
 
--    Check For Writeable Shared Files
+-    Check For Writeable Shared Files ([Shell](https://github.com/seal9055/Docs/blob/main/suid.c))
 
          strace <service> 2>&1 | grep -iE "open|access|no such file"
-         create & compile [Shell](https://github.com/seal9055/Docs/blob/main/suid.c)
+         create & compile 
          Execute Service
