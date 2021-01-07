@@ -220,7 +220,9 @@ Enumeration
      
 `TCP 1521: ORACLE`
      
--    [Good Blog Post](https://medium.com/@netscylla/pentesters-guide-to-oracle-hacking-1dcf7068d573)
+-    [Good Blog Post](https://medium.com/@netscylla/pentesters-guide-to-oracle-hacking-1dcf7068d573)  
+
+-    [Oracle Database Attacking Tool](https://github.com/quentinhardy/odat)  
 <br>
 
 `TCP 2049: NFS`   
