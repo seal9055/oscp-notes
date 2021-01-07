@@ -24,7 +24,7 @@ Enumeration
         `sudo nmap --top-ports 100 -sU -o udp.scan -Pn`
 
 -    Extensions  
-    `txt,php,aspx,cgi,asp,html,jsp,pdf,doc,docx,xls,xlsx,rtf,bak,xml,xsl,phpthml,sh,pl,py`
+    `txt,php,aspx,cgi,asp,html,jsp,pdf,doc,docx,xls,xlsx,rtf,bak,xml,xsl,phpthml,sh,pl,py,config,php7,exe`
 
 -    Wordlists  
 
