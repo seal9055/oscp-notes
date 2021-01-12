@@ -625,10 +625,6 @@ Other
 
 `Hashcracking`
 
--    [Hashes.org](https://hashes.org)  
-
--    [Hash Analyzer](https://www.tunnelsup.com/hash-analyzer/)  
-
 -    John  
      `john --format=<fomrat> --wordlist=/usr/share/wordlists/rockyou.txt hash.txt`  
 
@@ -636,6 +632,7 @@ Other
 
          hashcat -m <hashid> -a 0 -o cracked.txt hash.txt /usr/share/wordlists/rockyou.txt -O  
          hashcat -m <hashid> -a 0 -o cracked.txt hash.txt /usr/share/wordlists/rockyou.txt -O -r /usr/share/hashcat/rules/best64.rule  
+         cat pw | hashcat -r/usr/share/hashcat/rules/best64.rule --stdout > wordlist.txt
          
 <br>
 
@@ -664,6 +661,22 @@ Other
 -    [Tio.run](https://tio.run/#)  
 
 <br>
+
+`Pip fix (Rarely works)`  
+         curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py   
+         python get-pip.py  
+         python -m pip install requests    
+
+<br>
+
+`MYSQL`
+         
+         show databases;
+         use <database>
+         show tables;
+         select * from <table>;
+      
+<br>   
 
 Buffer Overflow
 ===============================================================================================
