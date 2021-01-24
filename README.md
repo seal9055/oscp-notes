@@ -266,7 +266,7 @@ Enumeration
 
 <br>
 
-`AD Box`  
+`Active Directory`  
 
 -    [rpcclient](https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf)
 
@@ -277,6 +277,8 @@ Enumeration
           createdomuser username  
           setuserinfo2 username 24  
                <password>  
+            
+-    [SMB](#TCP 139/445: SMB/RPC)
                         
 <br><br>
 
