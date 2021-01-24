@@ -278,7 +278,10 @@ Enumeration
           setuserinfo2 username 24  
                <password>  
             
--    [SMB](#TCP 139/445: SMB/RPC)
+-    SMB  
+
+-    Kerbrute
+     `./kerbrute userenum --dc <rhost> -d <domain> <users.txt>`  
                         
 <br><br>
 
