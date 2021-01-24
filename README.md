@@ -264,6 +264,20 @@ Enumeration
      `snmpwalk -c public -v2c <RHOST>`
      `snmp-check <RHOST>`
 
+<br>
+
+`AD Box`  
+
+-    [rpcclient](https://www.willhackforsushi.com/sec504/SMB-Access-from-Linux.pdf)
+
+         rpcclient <rhost> (-U '')  
+         enumdomusers  
+         enumdomains  
+         srvinfo  
+          createdomuser username  
+          setuserinfo2 username 24  
+               <password>  
+                        
 <br><br>
 
 Web Exploitation
