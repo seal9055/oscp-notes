@@ -87,9 +87,9 @@ Enumeration
 -    Zone Transfer  
      `dig axfr @<RHOST> <dnsname>`
 
--    Dns Recon
-     `dnsrecon -r 127.0.0.0/24 -n <rhost>
-     `dnsrecon -r 127.0.1.0/24 -n <rhost>
+-    Dns Recon  
+     `dnsrecon -r 127.0.0.0/24 -n <rhost>  
+     `dnsrecon -r 127.0.1.0/24 -n <rhost>  
      
 <br>
      
