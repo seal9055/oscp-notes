@@ -274,9 +274,11 @@ Enumeration
          enumdomusers  
          enumdomains  
          srvinfo  
+         setuserinfo2 <user> 23 '<new_pass>'
           createdomuser username  
           setuserinfo2 username 24  
                <password>  
+       
             
 -    SMB  
 
@@ -294,6 +296,8 @@ Enumeration
          python3 bloodhound.py -u <user> -p <password> -ns <rhost> -d domain -c all
          Run Bloodhound
           
+ -   ldap
+
 <br><br>
 
 Web Exploitation
