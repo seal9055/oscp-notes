@@ -192,6 +192,7 @@ Enumeration
      `ldapsearch -h <rhost> -x`  
      `ldapsearch -h <rhost> -x -s base namingcontexts`  
      `ldapsearch -h <rhost> -x -b "<information from previous command>"`  
+     `ldapsearch -h <rhost> -x -b "<information from previous command>" '(objectClass=Person)'`  
      
 <br>
 
