@@ -88,7 +88,9 @@ Enumeration
      `dig axfr @<RHOST> <dnsname>`
 
 -    Dns Recon  
-     `dnsrecon -r 127.0.0.0/24 -n <rhost>  
+         
+         dnsrecon -r 127.0.0.0/24 -n <rhost>
+         dnsrecon -d <RHOST> -r 10.0.0.0/8
      
 <br>
      
