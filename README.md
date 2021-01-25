@@ -158,8 +158,8 @@ Enumeration
 -    smbmap  
      `smbmap -H <RHOST>`
      
--    enum4linux
-     `enum4linux -a -M -l -d <RHOST> 2>&1`
+-    [enum4linux-ng](https://github.com/cddmp/enum4linux-ng)  
+     `/opt/enum4linux-ng/enum4linux-ng.py -A <rhost>`  
    
 -    Version Scan  
      `use auxiliary/scanner/smb/smb_version`
