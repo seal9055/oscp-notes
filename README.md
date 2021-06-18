@@ -677,7 +677,11 @@ Post Exploitation Windows
          %SYSTEMROOT%\repair\system
          %SYSTEMROOT%\System32\config\SYSTEM
          %SYSTEMROOT%\System32\config\RegBack\system
-         
+         C:\unattend.xml
+         C:\Windows\System32\
+         C:\Windows\System32\sysprep\
+         C:\sysprep.inf
+         C:\sysprep\sysprep.xml
 <br>
 
 `Passwords`
